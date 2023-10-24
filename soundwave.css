@@ -1,0 +1,96 @@
+* { box-sizing: border-box; }
+body { background-color: #49CDEB;
+       color: #40407A;
+	   font-family: Verdana, Arial, sans-serif;
+	   margin: 0;
+}
+#wrapper { background-color: #F5F5F5;
+    	   padding: 2em; 
+}
+header { background-color: #49CDEB;
+        background-image: url(soundwavelogo.jpg);
+		background-size: 100% 100%; 
+		color: #FFF;
+		font-size: 90%;
+		margin-top: 50px;
+		min-height: 200px;
+		height: 60px;
+		padding: 20px;
+}
+header a { text-decoration: none; }
+header a:link       { color: #FFF; }
+header a:visited { color: #FFF; }
+header a:hover    { color: #EDF5F5; }
+.home, .content { height: 20vh;
+        padding-left: 10%;
+		padding-top: 2em; }
+nav { background-color: #FFF;
+	 position: fixed;
+	 left: 0;
+	 top: 0;
+	 margin: 0;
+	 padding: 0.5em 0 1em 1em;
+	 text-align: right;
+	 width: 100%;
+	 z-index: 9999;
+}
+nav a { display: block;
+	  text-decoration: none; 
+}
+nav a:link { color: #3F2860; }
+nav a:visited { color: #497777; }
+nav a:hover { color: #A26100;  }
+nav ul { display: flex; 
+       flex-flow: row wrap;
+	   font-size: 1.2em;
+	   list-style-type: none; 
+	   margin: 0;
+}
+nav li { display: inline;
+      padding: 0 1em;
+	  width: 40%; }
+
+@media (min-width: 600px) { 
+		nav ul { flex-flow: row nowrap;
+		       justify-content: flex-end; }
+		nav li { width: 7em; }
+		section { flex: 1; 
+		    min-width: 30%; }
+		#flow { display: flex;
+		    flex-flow: row wrap; }
+}
+@media (min-width: 1024px) { 
+		header { font-size: 120%; }
+		.home { height: 40vh;
+		        padding-left: 8em;
+				 padding-top: 5em;}
+		.content { height: 30vh;
+				   padding-left: 8em;
+				   padding-top: 1em; }
+		#wrapper { margin: auto;
+		           width: 80%; }
+		footer { grid-area: footer; }
+}
+section h3 { background-color: #AEC3E3;
+           font-size: 110%;
+           margin-bottom: 0;
+           margin-top: 0;
+		   padding: .25em;
+}
+section p { padding: 0 .25em .25em .25em; }
+section { background-color: #EAEAEA;
+		margin-bottom: 1em;
+		margin-right: 1em;
+		padding: 0;
+ }
+footer { background-color: #AEC3E3;
+         font-size: .70em;
+         font-style: italic;
+		 padding: 1em;
+		 text-align: center;
+}
+table { width: 60%;
+      margin: auto; 
+	  margin-bottom: 1em;
+	  border: none;
+}
